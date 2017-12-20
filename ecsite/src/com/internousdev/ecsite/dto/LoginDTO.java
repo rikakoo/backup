@@ -1,44 +1,33 @@
 package com.internousdev.ecsite.dto;
 
-public class LoginDTO {
-
+public class LoginDTO{
 	private String loginId;
-
 	private String loginPassword;
-
 	private String userName;
-
 	private boolean loginFlg = false;
 
-	public String getLoginId() {
+	public String getLoginId(){
 		return loginId;
 	}
-
-	public void setLoginId(String loginId) {
+	public void setLoginId(String loginId){
 		this.loginId = loginId;
 	}
-
-	public String getLoginPassword() {
+	public String getLoginPassword(){
 		return loginPassword;
 	}
-
-	public void setLoginPassword(String loginPassword) {
+	public void setLoginPassword(String loginPassword){
 		this.loginPassword = loginPassword;
 	}
-
-	public String getUserName() {
+	public String getUseName(){
 		return userName;
 	}
-
-	public void setUserName(String userName) {
+	public void setUserName(String userName){
 		this.userName = userName;
 	}
-
-	public boolean getLoginFlg() {
+	public boolean getLoginFlg(){
 		return loginFlg;
 	}
-
-	public void setLoginFlg(boolean loginFlg) {
+	public void setLoginFlg(boolean loginFlg){
 		this.loginFlg = loginFlg;
 	}
 }

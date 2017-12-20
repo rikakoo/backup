@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="com.internousdev.ecsite.dao.LoginDAO"/>
-<fullyQualifiedTypeName name="com.internousdev.ecsite.dto.BuyItemDTO"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
-<fullyQualifiedTypeName name="org.apache.struts2.interceptor.SessionAware"/>
 <fullyQualifiedTypeName name="com.internousdev.ecsite.dao.MyPageDAO"/>
-<fullyQualifiedTypeName name="com.opensymphony.xwork2.ActionSupport"/>
 <fullyQualifiedTypeName name="com.internousdev.ecsite.util.DateUtil"/>
 <fullyQualifiedTypeName name="java.sql.ResultSet"/>
 <fullyQualifiedTypeName name="com.internousdev.ecsite.dto.LoginDTO"/>
@@ -13,4 +10,8 @@
 <fullyQualifiedTypeName name="java.sql.SQLException"/>
 <fullyQualifiedTypeName name="com.internousdev.ecsite.dto.MyPageDTO"/>
 <fullyQualifiedTypeName name="com.internousdev.ecsite.util.DBConnector"/>
+<fullyQualifiedTypeName name="org.apache.struts2.interceptor.SessionAware"/>
+<fullyQualifiedTypeName name="com.internousdev.ecsite.dao.BuyItemDAO"/>
+<fullyQualifiedTypeName name="com.internousdev.ecsite.dto.BuyItemDTO"/>
+<fullyQualifiedTypeName name="com.opensymphony.xwork2.ActionSupport"/>
 </qualifiedTypeNameHistroy>

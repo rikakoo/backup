@@ -1,5 +1,0 @@
-package com.internousdev.web.util;
-
-public class DBConnector {
-
-}

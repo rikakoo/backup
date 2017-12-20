@@ -10,11 +10,7 @@ public class BuyItemCompleteAction extends ActionSupport implements SessionAware
 
 	public Map<String,Object> session;
 
-	/**
-	 * 商品購入情報登録完了メソッド
-	 *
-	 * @author internous
-	 */
+
 	public String execute() {
 
 		String result = SUCCESS;
