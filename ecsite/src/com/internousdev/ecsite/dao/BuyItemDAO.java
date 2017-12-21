@@ -9,11 +9,11 @@ import com.internousdev.ecsite.util.DBConnector;
 
 public class BuyItemDAO{
 	private DBConnector dbConnector = new DBConnector();
-	private Connection connection =dbConnector.getConnection();
+	private Connection connection = dbConnector.getConnection();
 	private BuyItemDTO buyItemDTO = new BuyItemDTO();
 
 	public BuyItemDTO getBuyItemInfo(){
-		String sql = "SELECT id,item,_name,item_price FROM item_info_transaction";
+		String sql = "SELECT id, item_name, item_price FROM item_info_transaction";
 		try{
 			PreparedStatement preapedStatement = connection.prepareStatement(sql);
 			ResultSet resultSet = preapedStatement.executeQuery();

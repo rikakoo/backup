@@ -15,7 +15,7 @@ public class MyPageAction extends ActionSupport implements SessionAware{
 	public Map<String,Object> session;
 	private MyPageDAO myPageDAO = new MyPageDAO();
 
-	public ArrayList<MyPageDTO> myPageList = new ArrayList<MyPageDTO>();
+	public ArrayList<MyPageDTO>myPageList = new ArrayList<MyPageDTO>();
 	private String deleteFlg;
 	private String message;
 	public String execute() throws SQLException{
@@ -28,24 +28,23 @@ public class MyPageAction extends ActionSupport implements SessionAware{
 
 			myPageList = myPageDAO.getMyPageUserInfo(item_transaction_id,user_master_id);
 
-			Iterator<MyPageDTO> iterator = myPageList.iterator();
+			Iterator<MyPageDTO>iterator = myPageList.iterator();
 			if(!(iterator.hasNext())){
 				myPageList = null;
 			}
 		}else if(deleteFlg.equals("1")){
-			delete();
+				delete();
 		}
 		String result = SUCCESS;
 		return result;
-	}
-	public void delete() throws SQLException{
+	}public void delete() throws SQLException{
 		String item_transaction_id = session.get("id").toString();
 		String user_master_id = session.get("login_user_id").toString();
 
-		int res = myPageDAO.buyItemHistoryDelete(item_transaction_id,user_master_id);
-		if(res > 0 ){
+		int res = myPageDAO.buyItemHistoryDelete(item_transaction_id, user_master_id);
+		if(res > 0){
 			myPageList = null;
-			setMessage("商品情報を正しく削除しました");
+			setMessage("商品購入を正しく削除しました");
 		}else if(res == 0){
 			setMessage("商品情報の削除に失敗しました");
 		}
@@ -66,4 +65,4 @@ public class MyPageAction extends ActionSupport implements SessionAware{
 	public void setMessage(String message){
 		this.message = message;
 	}
-	}
+}
