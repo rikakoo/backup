@@ -1,11 +1,12 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<%@ taglib prefix="s" uri="/struts-tags" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ taglib prefix="s" uri="/struts-tags"%>
 
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta http-equiv="Content-Style-Type" content="text/css" />
 	<meta http-equiv="Content-Script-Type" content="text/javascript" />
 	<meta http-equiv="imagetoolbar" content="no" />
@@ -14,7 +15,8 @@
 	<meta charset="utf-8">
 	<title>UserCreate画面</title>
 	<style type="text/css">
-	body {
+		/* ========TAG LAYOUT======== */
+		body {
 		   margin:0;
 		   padding:0;
 		   line-height:1.6;
@@ -30,6 +32,7 @@
 			margin:0 auto;
 		}
 
+		/* ========ID LAYOUT======== */
 		#top {
 		   width:780px;
 		   margin:30px auto;
@@ -54,12 +57,11 @@
 			background-color: black;
 			clear:both;
 		}
-
 	</style>
 </head>
 <body>
 	<div id="header">
-		<div id="pr">
+	 	<div id="pr">
 		</div>
 	</div>
 	<div id="main">
@@ -68,13 +70,13 @@
 		</div>
 		<div>
 			<s:if test="errorMassage != ''">
-				<s:property value="errorMassage" escape="false"/>
+				<s:property value="errorMassage" escape="false" />
 			</s:if>
 			<table>
 			<s:form action="UserCreateConfirmAction">
 				<tr>
 					<td>
-						<label>ログインID：</label>
+						<label>ログインID:</label>
 					</td>
 					<td>
 						<input type="text" name="loginUserId" value="" />
@@ -82,15 +84,15 @@
 				</tr>
 				<tr>
 					<td>
-						<label>ログインPASS：</label>
+						<label>ログインPASS:</label>
 					</td>
 					<td>
-						<input type="text" name="loginPassword" />
+						<input type="text" name="loginPassword" value="" />
 					</td>
 				</tr>
 				<tr>
 					<td>
-						<label>ユーザー名：</label>
+						<label>ユーザー名:</label>
 					</td>
 					<td>
 						<input type="text" name="userName" value="" />
@@ -98,16 +100,15 @@
 				</tr>
 				<s:submit value="登録"/>
 			</s:form>
-
 			</table>
-		<div>
-			<span>前画面に戻る場合は</span><a href='<s:url action="HomeAction" />'>こちら</a>
+			<div>
+				<span>前画面に戻る場合は</span><a href='<s:url action="HomeAction" />'>こちら</a>
+			</div>
 		</div>
 	</div>
-</div>
-	<div id="footer">
-	<div id="pr">
+		<div id="footer">
+	 	<div id="pr">
+		</div>
 	</div>
-</div>
 </body>
 </html>

@@ -1,5 +1,6 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<%@ taglib prefix="s" uri="/struts-tags" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ taglib prefix="s" uri="/struts-tags"%>
 
 <!DOCTYPE html>
 <html>
@@ -7,14 +8,12 @@
 	<meta charset="utf-8">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta http-equiv="Content-Style-Type" content="text/css" />
-	<meta http-equiv="Content-Script-Type" content="text/css" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
 	<meta http-equiv="imagetoolbar" content="no" />
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
-
 	<title>Home画面</title>
 	<style type="text/css">
-
 		body {
 		   margin:0;
 		   padding:0;
@@ -31,6 +30,7 @@
 			margin:0 auto;
 		}
 
+		/* ========TEMPLATE LAYOUT======== */
 		#top {
 		   width:780px;
 		   margin:30px auto;
@@ -61,29 +61,29 @@
 			text-align: center;
 		}
 	</style>
-	<body>
-		<div id="header">
-			<div id="pr">
-			</div>
+</head>
+<body>
+	<div id="header">
+	 	<div id="pr">
 		</div>
-		<div id="main">
-			<div id="top">
-				<p>Home</p>
-			</div>
-			<div id="text-center">
-				<s:form action="HomeAction">
-					<s:submit value="商品購入"/>
-				</s:form>
-				<s:if test="#session.id ! = null">
-					<p>ログアウトする場合は <a href = '<s:url action="LogoutAction" />'>こちら</a></p>
-				</s:if>
-			</div>
-		</div>
-		<div id="footer">
-			<div id="pr">
-			</div>
+	</div>
+	<div id="main">
+		<div id="top">
+			<p>Home</p>
 		</div>
 
-	</body>
-</head>
+		<div id="text-center">
+			<s:form action="HomeAction">
+				<s:submit value="商品購入"/>
+			</s:form>
+			<s:if test="#session.id != null">
+				<p>ログアウトする場合は<a href='<s:url action="LogoutAction" />'>こちら</a></p>
+			</s:if>
+		</div>
+	</div>
+	<div id="footer">
+	 	<div id="pr">
+		</div>
+	</div>
+</body>
 </html>

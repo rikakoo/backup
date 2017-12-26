@@ -1,21 +1,22 @@
-<%@ page language="java" contentType="text/html; cherset=UTF-8" pageEncoding="UTF-8" %>
-<%@ taglib prefix="s" uri="/struts-tags" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ taglib prefix="s" uri="/struts-tags"%>
 
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-	<meta http-equiv="Content-Style-Type" content="text/css"/>
-	<meta http-equiv="Content-Script-Type" content="text/javascript"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
 	<meta http-equiv="imagetoolbar" content="no" />
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
 	<meta charset="utf-8">
 	<title>BuyItemComplete画面</title>
 	<style type="text/css">
-
-	body {
+	/* ========TAG LAYOUT======== */
+		body {
 		   margin:0;
 		   padding:0;
 		   line-height:1.6;
@@ -31,6 +32,7 @@
 			margin:0 auto;
 		}
 
+	/* ========ID LAYOUT======== */
 		#top {
 		   width:780px;
 		   margin:30px auto;
@@ -55,12 +57,11 @@
 			background-color: black;
 			clear:both;
 		}
-
 	</style>
 </head>
 <body>
 	<div id="header">
-		<div id="pr">
+	 	<div id="pr">
 		</div>
 	</div>
 	<div id="main">
@@ -68,10 +69,10 @@
 			<p>BuyItemComplete</p>
 		</div>
 		<div>
-			<p>購入手続きが完了いたしました</p>
+			<p>購入手続きが完了致しました。</p>
 			<div>
-				<a href = 'url action = "MyPageAction"/>'>マイページ</a><span>から購入履歴の確認が可能です</span>
-				<p>Homeへ戻る場合は<a href = '<s:url action="GoHomeAction"/>'>こちら</a></p>
+				<a href='<s:url action="MyPageAction" />'>マイページ</a><span>から購入履歴の確認が可能です。</span>
+				<p>Homeへ戻る場合は<a href='<s:url action="GoHomeAction" />'>こちら</a></p>
 			</div>
 		</div>
 	</div>
@@ -79,6 +80,6 @@
 		<div id="pr">
 		</div>
 	</div>
-
 </body>
 </html>
+
